@@ -17,7 +17,7 @@ function Login() {
     e.preventDefault(); // Prevent default form submission behavior
     try {
       const response = await axios.post(
-        "http://localhost:5000/login",
+        "https://supermarket-96e3.onrender.com/login",
         {
           email,
           password,

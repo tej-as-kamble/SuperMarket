@@ -24,7 +24,7 @@ function AddItem() {
     try {
       // Add item to the database
       await axios.post(
-        "http://localhost:5000/addInventory",
+        "https://supermarket-96e3.onrender.com/addInventory",
         {
           token: token,
           name: itemName,

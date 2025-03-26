@@ -19,7 +19,7 @@ function Clerk() {
   useEffect(() => {
     async function fetchData() {
       const data = await axios.post(
-        "http://localhost:5000/item"
+        "https://supermarket-96e3.onrender.com/item"
       );
       setItem(data.data);
     }
@@ -58,7 +58,7 @@ function Clerk() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/generateBill",
+        "https://supermarket-96e3.onrender.com/generateBill",
         {
           token: token,
           billDetails: billDetails,

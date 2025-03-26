@@ -16,7 +16,7 @@ function ChangePrice() {
   useEffect(() => {
     async function fetchData() {
       const data = await axios.post(
-        "http://localhost:5000/item"
+        "https://supermarket-96e3.onrender.com/item"
       );
       setItem(data.data);
     }
@@ -26,7 +26,7 @@ function ChangePrice() {
   const handleChangePrice = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/changePrice",
+        "https://supermarket-96e3.onrender.com/changePrice",
         {
           token: token,
           itemId: itemId,

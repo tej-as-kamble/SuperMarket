@@ -27,7 +27,7 @@ function Register() {
     // }
 
     // Sending data to server
-    fetch("http://localhost:5000/signup", {
+    fetch("https://supermarket-96e3.onrender.com/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
